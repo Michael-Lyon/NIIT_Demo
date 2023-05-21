@@ -1,0 +1,1 @@
+web: gunicorn mysniit_schedule.wsgi
