@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-hp$-v120cc_@#si(qd%9r3(wy)cz3m1#g^$srr(w39o3k3ig+=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["niit-demo-timetable.up.railway.app", "localhost"]
 
 
 # Application definition
