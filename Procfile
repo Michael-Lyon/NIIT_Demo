@@ -1,1 +1,1 @@
-web: gunicorn mysniit_schedule.wsgi
+web: gunicorn niit_schedule.wsgi
