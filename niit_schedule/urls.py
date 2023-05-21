@@ -16,15 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from rest_framework import routers
-from core.views import ClassroomViewSet, ClassViewSet, ScheduleViewSet
-
-router = routers.DefaultRouter()
-router.register('classrooms', ClassroomViewSet)
-router.register('classes', ClassViewSet)
-router.register('schedules', ScheduleViewSet)
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('api/', include('core.urls', namespace='core')),
     path("admin/", admin.site.urls),
 ]
