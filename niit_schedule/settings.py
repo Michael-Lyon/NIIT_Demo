@@ -71,7 +71,7 @@ CORS_ALLOW_HEADERS = [
     'x-requested-with',
 ]
 
-CSRF_TRUSTED_ORIGINS = ["https://niitdemo-demo.up.railway.app/"]
+CSRF_TRUSTED_ORIGINS = ["https://niitdemo-demo.up.railway.app"]
 
 
 STATIC_URL = '/static/'
