@@ -11,7 +11,7 @@ class Classroom(models.Model):
 class Class(models.Model):
     name = models.CharField(max_length=100)
     teacher = models.CharField(max_length=100, blank=True, null=True)
-    duration = models.IntegerField()  # Duration in minutes
+    duration = models.CharField(max_length=100)
     classroom = models.ForeignKey(Classroom, on_delete=models.CASCADE)
 
     def __str__(self):
