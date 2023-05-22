@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-hp$-v120cc_@#si(qd%9r3(wy)cz3m1#g^$srr(w39o3k3ig+=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["niit-demo-timetable.up.railway.app", "localhost"]
+ALLOWED_HOSTS = ["niitdemo-demo.up.railway.app", "localhost"]
 
 
 # Application definition
@@ -69,8 +69,7 @@ CORS_ALLOW_HEADERS = [
     'x-requested-with',
 ]
 
-CSRF_TRUSTED_ORIGINS = ["niit-schedule-demo.up.railway.app", 'https://niit-demo-timetable.up.railway.app',
-                        "http://localhost:8000", "niit-schedule-demo.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ["https://niitdemo-demo.up.railway.app/"]
 
 
 STATIC_URL = '/static/'
