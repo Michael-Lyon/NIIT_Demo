@@ -17,11 +17,11 @@ class ClassSerializer(serializers.ModelSerializer):
 class ScheduleSerializer(serializers.ModelSerializer):
     class_name = serializers.SerializerMethodField()
     teacher = serializers.SerializerMethodField()
-    duration = serializers.SerializerMethodField()
+    class_duration = serializers.SerializerMethodField()
 
     class Meta:
         model = Schedule
-        fields = ['day', 'duration', 'class_name', 'teacher']
+        fields = ['day', 'duration', 'class_name',"class_duration", 'teacher']
 
     def get_class_name(self, obj):
         return obj.class_obj.name
@@ -29,5 +29,5 @@ class ScheduleSerializer(serializers.ModelSerializer):
     def get_teacher(self, obj):
         return obj.class_obj.teacher
 
-    def get_duration(self, obj):
+    def get_class_duration(self, obj):
         return obj.class_obj.duration
