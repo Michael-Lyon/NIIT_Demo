@@ -69,7 +69,7 @@ CORS_ALLOW_HEADERS = [
     'x-requested-with',
 ]
 
-CSRF_TRUSTED_ORIGINS = ['https://niit-demo-timetable.up.railway.app',
+CSRF_TRUSTED_ORIGINS = ["niit-schedule-demo.up.railway.app", 'https://niit-demo-timetable.up.railway.app',
                         "http://localhost:8000", "niit-schedule-demo.up.railway.app"]
 
 
