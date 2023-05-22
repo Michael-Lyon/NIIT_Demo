@@ -70,7 +70,7 @@ CORS_ALLOW_HEADERS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = ['https://niit-demo-timetable.up.railway.app',
-                        "http://localhost:8000", "'niit-schedule-demo.up.railway.app"]
+                        "http://localhost:8000", "niit-schedule-demo.up.railway.app"]
 
 
 STATIC_URL = '/static/'
